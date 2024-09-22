@@ -20,7 +20,7 @@ jobs:
     - name: Publish
       run: dotnet publish DogScepterCLI -c Release -r win-x64 --self-contained false -p:PublishSingleFile=true --output cli_win_x64
     - name: Upload
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: DogScepterCLI_win_x64
         path: cli_win_x64
